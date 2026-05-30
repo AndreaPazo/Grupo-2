@@ -8,7 +8,6 @@ elif num < 0:
     clasificacion = "negativo"
 else:
     clasificacion = "cero."
-print (clasificacion)
 
 # Indicamos si es entero o decimal
 
