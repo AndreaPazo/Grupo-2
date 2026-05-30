@@ -18,17 +18,17 @@ else:
         x1 = (-b + math.sqrt(discriminante)) / (2*a)
         x2 = (-b - math.sqrt(discriminante)) / (2*a)
         print("Dos raíces reales:")
-        print("x1 =", x1)
-        print("x2 =", x2)
+        print(f"El valor de x1 es: {x1}")
+        print(f"El valor de x2 es: {x2}")
 
     elif discriminante == 0:
         x = -b / (2*a)
         print("Raíz doble:")
-        print("x =", x)
+        print(f"El valor de x es: {x}")
 
     else:
         x1 = (-b + cmath.sqrt(discriminante)) / (2*a)
         x2 = (-b - cmath.sqrt(discriminante)) / (2*a)
         print("Raíces complejas:")
-        print("x1 =", x1)
-        print("x2 =", x2)
+        print(f"El valor de x1 es: {x1}")
+        print(f"El valor de x2 es: {x2}")
