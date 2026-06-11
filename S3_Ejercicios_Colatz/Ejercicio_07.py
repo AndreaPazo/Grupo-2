@@ -1,4 +1,4 @@
-# Ejercicio 7: Validar 
+# Ejercicio 7: Validar la contraseña
 # Pide contraseña con while; 
 # máximo 3 intentos, bloquea si falla.
 
