@@ -8,7 +8,7 @@ clave_correcta = "1234"
 intentos = 0
 # condición: máximo 3 intentos
 while intentos < 3:
-    clave = input("Ingrese la contraseña de 4 digitos: ")
+    clave = int(input("Ingrese la contraseña de 4 digitos: "))
     # éxito: imprime y rompe bucle
     if clave == clave_correcta:
         print("Acceso concedido")
