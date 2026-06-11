@@ -8,14 +8,14 @@ while True:
     print("1. Opción 1")
     print("2. Opción 2")
     print("3. Salir")
-    opcion = input("Seleccione una opción: ")
+    opcion = int(input("Seleccione una opción: "))
 
 # if anidado dentro del while
-    if opcion == "1":
+    if opcion == 1:
         print("Seleccionó la Opción 1")
-    elif opcion == "2":
+    elif opcion == 2:
         print("Seleccionó la Opción 2")
-    elif opcion == "3":
+    elif opcion == 3:
         print("Saliendo...")
         break  # rompe el bucle
     else:
