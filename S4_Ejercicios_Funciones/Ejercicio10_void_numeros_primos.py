@@ -1,6 +1,6 @@
 # Crea una función void que muestre todos los números primos desde 2 hasta N usando bucles anidados.
-
 def mostrar_primos_hasta(n):
+
     # Recorremos todos los números desde 2 hasta n
     for num in range(2, n + 1):
         # Suponemos que el número sí es primo
@@ -17,11 +17,8 @@ def mostrar_primos_hasta(n):
         if es_primo:
             print(num)
 
-print("Números primos hasta 20:")
-mostrar_primos_hasta(20)
+# Pedir al usuario hasta donde quiere ver números primos
+Usuario = int(input("Ingrese una cantidad para verificar números primos: "))
+print(f"Los números primos hasta {Usuario} son:")
+mostrar_primos_hasta(Usuario)
 
-print("\nNúmeros primos hasta 30:")
-mostrar_primos_hasta(30)
-
-print("\nNúmeros primos hasta 40:")
-mostrar_primos_hasta(40)
