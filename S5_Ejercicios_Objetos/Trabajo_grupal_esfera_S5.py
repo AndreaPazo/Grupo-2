@@ -3,7 +3,7 @@
 import math
 
 class Formas:
-    """Clase que modela un ."""
+    """Clase que modela una esfera"""
     def __init__(self, radio): #self=instancia
         self.radio = radio # atributo de radio
     # Metodos
