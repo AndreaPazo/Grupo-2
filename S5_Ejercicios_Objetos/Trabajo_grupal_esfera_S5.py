@@ -1,7 +1,6 @@
-# una clase para hacer la prueba de la clase, y tendrá como atributo el radio
-# calcular el perímetro, área y volumen
+# Hacer una prueba de una esfera en clase, tendrás como atributo el radio
+# Calcular el perímetro, área y volumen
 import math
-# global
 
 class Formas:
     """Clase que modela un ."""
