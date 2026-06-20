@@ -15,9 +15,3 @@ p = Persona(usuario)
 p.saludar()
 p.despedirse()
 
-
-
-
-
-
-
