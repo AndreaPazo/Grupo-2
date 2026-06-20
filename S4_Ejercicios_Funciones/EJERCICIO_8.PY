@@ -17,9 +17,3 @@ print(incrementar_contador())  # Salida: 3
 print(incrementar_contador())  # Salida: 4
 print(incrementar_contador())  # Salida: 5
 
-
-
-
-print(incrementar_contador())  
-print(incrementar_contador())  
-print(incrementar_contador())  
