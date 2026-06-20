@@ -13,7 +13,7 @@ class Formas:
     def perimetro(self): # método — retorna el perímetro
         return (2) * math.pi * self.radio
 
-    def volumen(self): # método — retorna el perímetro
+    def volumen(self): # método — retorna el volumen
         return ((4/3)* math.pi*self.radio**3)
 
     def describir(self): # método — imprime descripción
@@ -26,5 +26,4 @@ c= Formas(5)
 c.describir ()
 
 print(f"el área es: {c.area():.2f}")
-
 
