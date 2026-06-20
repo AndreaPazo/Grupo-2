@@ -1,6 +1,5 @@
 # Implementa una función recursiva hanoi(n, origen, destino, auxiliar)
 #  que resuelva las Torres de Hanói.
-
 class TorresHanoi:
     def __init__(self, n, origen, destino, auxiliar):
         # Atributos del objeto
