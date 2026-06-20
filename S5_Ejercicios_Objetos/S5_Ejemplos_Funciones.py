@@ -59,9 +59,16 @@ r.describir()   # Rectángulo 5x3 / Área: 15 / Perímetro: 16
 
 print("\nEJERCICIO04: ")
 
+"""Módulo propio: operaciones
+matemáticas."""
+def sumar(a, b):
+    return a + b
 
+def potencia(base, exp):
+    return base ** exp
 
-
-
-
-
+def es_primo(n):
+    if n < 2: return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0: return False
+        return True
