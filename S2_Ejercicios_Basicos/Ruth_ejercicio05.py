@@ -1,5 +1,5 @@
 
-#Ingresar 3 notas de un estudiante (escala 0-20). Calcular el
+#Ingresar 3 notas de un estudiante (escala 0-20). Calcular el 
 #promedio y mostrar si el alumno está Aprobado (≥11) o
 #Desaprobado (<11)
 
