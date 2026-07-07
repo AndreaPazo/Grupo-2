@@ -1,4 +1,4 @@
-# Conversor de divisas
+# Conversor de divisas 
 print("Elegir el tipo de cambio de moneda")
 print("1) Soles(PEN)-Dólares(USD)")
 print("2) Dólares(USD)-Soles(PEN)")
