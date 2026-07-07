@@ -1,4 +1,4 @@
-#import math: para usar funciones que Python no tiene y en este caso para usar la constante pi
+#import math: para usar funciones que Python no tiene y en este caso para usar la constante pi 
 import math
 #Se pide calcular el área y el perímetro de un círculo ingresando la medidad del radio
 rad = float(input("Ingrese el radio: "))
