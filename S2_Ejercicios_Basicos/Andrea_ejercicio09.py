@@ -1,5 +1,5 @@
 # Ecuación Cuadrática ax²+bx+c=0
-# Resolver una ecuación cuadrática de la forma ax² + bx + c = 0. 
+# Resolver una ecuación cuadrática de la forma ax² + bx + c = 0
 # Manejar los tres casos: dos raíces reales, una raíz doble y raíces complejas.
 
 import math
