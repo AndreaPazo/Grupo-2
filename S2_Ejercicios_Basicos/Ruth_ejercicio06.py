@@ -1,5 +1,5 @@
 
-#Crear un programa que pida un número del 1 al 7 y
+#Crear un programa que pida un número del 1 al 7 y 
 #muestre el nombre del día correspondiente usando
 #estructura match-case
 
