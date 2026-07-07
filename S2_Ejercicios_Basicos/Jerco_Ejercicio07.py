@@ -1,4 +1,4 @@
-# Pedir un número real al usuario
+# Pedir un número real al usuario 
 num = float(input("Ingresar un número real: "))
 
 # Revisamos si el número es positivo, negativo o cero
