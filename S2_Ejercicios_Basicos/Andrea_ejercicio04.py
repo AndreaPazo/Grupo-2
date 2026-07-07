@@ -1,6 +1,6 @@
 #PAR O IMPAR
-# Solicitar un número entero al usuario y determinar si es par o impar. 
-# Mostrar también si el número es positivo, negativo o cero.
+# Solicitar un número entero al usuario y determinar si es par o impar
+# Mostrar también si el número es positivo, negativo o cero
 
 num = int(input("Ingrese un número: "))
 
