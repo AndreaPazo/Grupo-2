@@ -1,5 +1,5 @@
 # Hacer una prueba de una esfera en clase, tendrás como atributo el radio
-# Calcular el perímetro, área y volumen
+# Calcular el perímetro, área y volumen 
 import math
 
 class Formas:
