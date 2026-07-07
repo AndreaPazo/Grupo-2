@@ -1,4 +1,4 @@
-#Se pide ingresar dos números y hacer las 4 operaciones básicas
+#Se pide ingresar dos números y hacer las 4 operaciones básicas 
 num1 = float(input("Ingrese el número 1: "))
 num2 = float(input("Ingrese el número 2: "))
 print(f"La suma es {num1+num2}")
