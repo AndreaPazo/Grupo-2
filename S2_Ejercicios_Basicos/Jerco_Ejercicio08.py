@@ -1,4 +1,4 @@
-# Pedir al usuario su talla y peso
+# Pedir al usuario su talla y peso 
 talla = float(input("Ingresar su talla en metros: "))
 peso = float(input("Ingresar su peso en kilogramos: "))
 
