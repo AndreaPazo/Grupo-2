@@ -1,4 +1,4 @@
-# Ejemplo: paso por valor (tipo inmutable)
+# Ejemplo: paso por valor (tipo inmutable) 
 print("EJERCICIO01: ")
 def duplicar(numero):
     num = numero * 2 # Solo modifica
