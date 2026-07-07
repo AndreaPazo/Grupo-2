@@ -1,5 +1,5 @@
 # Hacer una prueba de un cilindro en clase, tendrás como atributo el radio y la altura
-# Calcular el area de la base, lateral, total y volumen
+# Calcular el area de la base, lateral, total y volumen 
 import math
 
 class Cilindro:
