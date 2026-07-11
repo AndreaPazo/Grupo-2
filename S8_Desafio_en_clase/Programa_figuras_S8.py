@@ -10,11 +10,11 @@ class Circulo:
         self.radio = radio
 
     def area(self):
-        return math.pi (self.radio ** 2)
+        return math.pi * (self.radio ** 2)
 
     def perimetro(self):
         return 2 * math.pi * self.radio
-    
+
 class Cuadrilatero:
     def __init__(self, lado1, lado2):
         self.lado1 = lado1
@@ -73,7 +73,3 @@ while True:
     continuar = input("¿Desea realizar otro cálculo? (si/no): ")
     if continuar.lower() != "si":
         break
-    
-
-
-
