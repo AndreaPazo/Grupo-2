@@ -3,7 +3,7 @@
 # máximo 3 intentos, bloquea si falla.
 
 # Contraseña
-clave_correcta = "1234"
+clave_correcta = 1234
 # Contador de intentos
 intentos = 0
 # condición: máximo 3 intentos
