@@ -1,71 +1,91 @@
+# Implementa un sistema completo de registro de notas
 
-#20.Implementa un sistema completo de registro de notas. Usa un diccionario global compartido entre múltiples 
-# funciones especializadas
-
-
-# Diccionario global para almacenar las notas de los estudiantes
+# Diccionario global
 notas_estudiantes = {}
 
-#REGISTRA UN NUEVO ESTUDIANTE:
+# 1. Registrar estudiante
 def registrar_estudiante():
-    nombre = input("Ingrese el nombre del  estudiante: ")
+    nombre = input("Ingrese el nombre del estudiante: ")
+
     if nombre not in notas_estudiantes:
         notas_estudiantes[nombre] = []
-        print(f"Estudiante {nombre} registrado correctamente.")
+        print(f"Estudiante '{nombre}' registrado correctamente.")
     else:
         print("El estudiante ya existe.")
 
-#AGREGA UNA NOTA A UN ESTUDIANTE EXISTENTE:
+# 2. Agregar nota
 def agregar_nota():
-    # 1. Pedir el nombre (asegúrate de escribir un texto, no un número)
     nombre = input("Ingrese el nombre del estudiante: ")
-    
-    # 2. Verificar si el nombre existe en el diccionario
-    if nombre in notas_estudiantes:
-        while True:
-            try:
-                # 3. Pedir la nota solo cuando el nombre ya fue validado
-                nota = float(input(f"Ingrese la nota para {nombre} (0-20): "))
-                
-                # 4. Validar el rango
-                if 0 <= nota <= 20:
-                    notas_estudiantes[nombre].append(nota)
-                    print("Nota agregada con éxito.")
-                    break # Salimos del bucle
-                else:
-                    print("Error: La nota debe estar entre 0 y 20.")
-            except ValueError:
-                print("Error: Por favor, ingrese un número válido.")
-    else:
-        print("Error: Estudiante no encontrado. Regístrelo primero.")
 
-#MUESTRA LAS NOTAS DE UN ESTUDIANTE ESPECÍFICO:
+    if nombre not in notas_estudiantes:
+        print("El estudiante no existe.")
+        return
+
+    while True:
+        try:
+            nota = float(input("Ingrese la nota (0-20): "))
+
+            if 0 <= nota <= 20:
+                notas_estudiantes[nombre].append(nota)
+                print("Nota agregada correctamente.")
+                break
+            else:
+                print("La nota debe estar entre 0 y 20.")
+
+        except ValueError:
+            print("Ingrese un número válido.")
+
+# 3. Mostrar notas
 def mostrar_notas():
     nombre = input("Ingrese el nombre del estudiante: ")
-    notas = notas_estudiantes.get(nombre)
-    if notas is not None:
-        print(f"Notas de {nombre}: {notas}")
+
+    if nombre in notas_estudiantes:
+        if notas_estudiantes[nombre]:
+            print(f"Notas de {nombre}: {notas_estudiantes[nombre]}")
+        else:
+            print(f"{nombre} aún no tiene notas.")
     else:
         print("Estudiante no encontrado.")
 
+# Función para calcular promedio
 def calcular_promedio(notas):
-    if notas:
-        return sum(notas) / len(notas)
-    return 0
+    if len(notas) == 0:
+        return 0
+    return sum(notas) / len(notas)
 
-#MUESTRA LA LISTA DE TODOS LOS ESTUDIANTES:
+# 4. Mostrar promedio
+def mostrar_promedio():
+    nombre = input("Ingrese el nombre del estudiante: ")
+
+    if nombre in notas_estudiantes:
+
+        if len(notas_estudiantes[nombre]) == 0:
+            print("El estudiante no tiene notas.")
+        else:
+            promedio = calcular_promedio(notas_estudiantes[nombre])
+            print(f"Promedio de {nombre}: {promedio:.2f}")
+
+    else:
+        print("Estudiante no encontrado.")
+
+# 5. Mostrar estudiantes
 def mostrar_estudiantes():
-    if not notas_estudiantes:
+
+    if len(notas_estudiantes) == 0:
         print("No hay estudiantes registrados.")
     else:
         print("\nLista de estudiantes:")
-        for nombre in notas_estudiantes:
-            print(f"- {nombre}")
+
+        for estudiante in notas_estudiantes:
+            print("-", estudiante)
 
 
+# ==========================
+#      MENÚ PRINCIPAL
+# ==========================
 
-#MENU PRINCIAL PARA INTERACTUAR CON EL SISTEMA DE REGISTRO DE NOTAS:
 while True:
+
     print("\n--- Sistema de Registro ---")
     print("1. Agregar estudiante")
     print("2. Agregar nota")
@@ -76,19 +96,31 @@ while True:
 
     opcion = input("Seleccione una opción: ")
 
-#EVALUA LA OPCIÓN SELECCIONADA POR EL USUARIO Y LLAMA A LA FUNCIÓN CORRESPONDIENTE:
-    if opcion == '1':
+    if opcion == "1":
         registrar_estudiante()
-    elif opcion == '2':
+
+    elif opcion == "2":
         agregar_nota()
-    elif opcion == '3':
+
+    elif opcion == "3":
         mostrar_notas()
-    elif opcion == '4':
+
+    elif opcion == "4":
         mostrar_estudiantes()
-    elif opcion == '5':
-        mostrar_estudiantes()
-    elif opcion == '6':
-        print("Saliendo...")
+
+    elif opcion == "5":
+        mostrar_promedio()
+
+    elif opcion == "6":
+        print(f"\nEstudiantes registrados: {'Nota':>8}")
+
+        if len(notas_estudiantes) == 0:
+            print("No hay estudiantes registrados.")
+        else:
+            for estudiante in notas_estudiantes:
+                print(f"- {estudiante:<26} {notas_estudiantes[estudiante][0]:.0f}")
+
+        print("\nSaliendo...")
         break
 
     else:
